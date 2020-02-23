@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rizvis Hot Gaget</title>
 
+    <!-- Include Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
     <!-- Font Awesome Css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,13 +17,16 @@
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- NavbarFix Css -->
+    <link rel="stylesheet" href="css/navbar-fixed.css">
+
     <!-- Custom Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     <!-- Navigation Area -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
             <img src="img/logo.png" alt="logo">
@@ -41,8 +47,8 @@
     </nav>
 
     <!-- Home section Slider Area -->
-    <section id="home" class="py-5">
-        <div class="container bg-primary">
+    <section id="home" class="py-5 mt-5">
+        <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -52,12 +58,16 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                        <div class="row align-items-center">
-                           <div class="col-md-6">
+                           <div class="col-md-5">
                                <h2>Macbook Pro</h2>
-                               <p class="text-muted">The MacBook is a line of Macintosh laptop computers designed by Apple. ... The MacBook lineup came from the merging of
+                               <p class="text-muted py-2">The MacBook is a line of Macintosh laptop computers designed by Apple. ... The MacBook lineup came from the merging of
                                 the PowerBook and iBook lines as Apple transitioned</p>
                             <button type="button" class="btn btn-dark">BUY NOW <i class="fa fa-arrow-right"></i></button>
                            </div>
+                           <!-- Adding Watermark -->
+                             <div class="col-md-1 d-none d-md-block">
+                                <h1 class="water-mark">BEST PRODUCT</h1>   
+                             </div>
                            <div class="col-md-6">
                                <img src="img/banner-products/product-1.png" class="d-block w-100" alt="product-1">
                            </div>
@@ -65,11 +75,15 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row align-items-center">
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <h2>Sbl SNX Speaker</h2>
-                                <p class="text-muted">Speakers are popular output devices used with computer systems. They receive audio input from the computer's sound card
+                                <p class="text-muted py-2">Speakers are popular output devices used with computer systems. They receive audio input from the computer's sound card
                                 and produce audio output in the form of sound waves.</p>
                                 <button type="button" class="btn btn-dark">BUY NOW <i class="fa fa-arrow-right"></i></button>
+                            </div>
+                            <!-- Adding Watermark -->
+                            <div class="col-md-1">
+                                <h1 class="water-mark">BEST PRODUCT</h1>
                             </div>
                             <div class="col-md-6">
                                 <img src="img/banner-products/slider-1.png" class="d-block w-100" alt="slider-2">
@@ -77,13 +91,17 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row align-items-cente">
-                            <div class="col-md-6">
+                        <div class="row align-items-center">
+                            <div class="col-md-5">
                                 <h2>Jbl XooS Speaker</h2>
-                                <p class="text-muted">Speakers are popular output devices used with computer systems. They receive audio input
+                                <p class="text-muted py-2">Speakers are popular output devices used with computer systems. They receive audio input
                                     from the computer's sound card
                                     and produce audio output in the form of sound waves.</p>
                                 <button type="button" class="btn btn-dark">BUY NOW <i class="fa fa-arrow-right"></i></button>
+                            </div>
+                            <!-- Adding Watermark -->
+                            <div class="col-md-1">
+                                <h1 class="water-mark">BEST PRODUCT</h1>
                             </div>
                             <div class="col-md-6">
                                 <img src="img/banner-products/slider-3.png" class="d-block w-100" alt="slider-3">
@@ -95,11 +113,222 @@
         </div>
     </section>
 
+    <!-- Product Area (Smartphone Section) -->
+    <section id="product" class="text-center py-3">
+        <div class="container">
+            <!-- Added Heading -->
+            <div class="d-flex justify-content-between align-items-center pb-3">
+                <h4>Smartphone</h4>
+                <p class="text-warning">See All</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Gajjet One -->
+                    <div class="card">
+                        <img src="img/phone/phone-1.png" class="card-img-top" alt="redmi">
+                        <div class="card-body">
+                            <h3 class="card-title">Redmi Mi Pro</h3>
+                            <p class="card-text text-muted">A smartphone is a cellular telephone with an integrated computer and other features not originally associated.</p>
+                            <h2 class="pricing pb-2">$699</h2>
+                            <button type="button" class="btn btn-dark">BUY NOW <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Gajjet Two -->
+                    <div class="card">
+                        <img src="img/phone/phone-2.png" class="card-img-top" alt="iphone">
+                        <div class="card-body">
+                            <h3 class="card-title">iphone11 Pro</h3>
+                            <p class="card-text text-muted">A smartphone is a cellular telephone with an integrated computer and other features not
+                                originally associated.</p>
+                            <h2 class="pricing pb-2">$999</h2>
+                            <button type="button" class="btn btn-dark">BUY NOW <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Gajjet Three -->
+                    <div class="card">
+                        <img src="img/phone/phone-3.png" class="card-img-top" alt="samsung">
+                        <div class="card-body">
+                            <h3 class="card-title">Samsung note-8</h3>
+                            <p class="card-text text-muted">A smartphone is a cellular telephone with an integrated computer and other features not
+                                originally associated.</p>
+                            <h2 class="pricing pb-2">$799</h2>
+                            <button type="button" class="btn btn-dark">BUY NOW <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Area (Leptop Section) -->
+    <section id="product" class="text-center py-5">
+        <div class="container">
+            <!-- Added Heading -->
+            <div class="d-flex justify-content-between align-items-center pb-3">
+                <h4>Leptop</h4>
+                <p class="text-warning">See All</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Gajjet One -->
+                    <div class="card">
+                        <img src="img/laptop/product-1.png" class="card-img-top" alt="asus">
+                        <div class="card-body">
+                            <h3 class="card-title">Asus VivoBook</h3>
+                            <p class="card-text text-muted">Definition: Laptop Computer. A laptop computer is a portable personal computer powered by a battery, or an AC cord
+                            plugged into an electrical outlet, which is also used to charge the battery.</p>
+                            <h2 class="pricing pb-2">$999</h2>
+                            <button type="button" class="btn btn-dark">BUY NOW <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Gajjet Two -->
+                    <div class="card">
+                        <img src="img/laptop/product-2.png" class="card-img-top" alt="razer">
+                        <div class="card-body">
+                            <h3 class="card-title">Razer Blade 15</h3>
+                            <p class="card-text text-muted">Definition: Laptop Computer. A laptop computer is a portable personal computer powered by a battery, or an AC cord
+                            plugged into an electrical outlet, which is also used to charge the battery.</p>
+                            <h2 class="pricing pb-2">$2799</h2>
+                            <button type="button" class="btn btn-dark">BUY NOW <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <!-- Gajjet Three -->
+                    <div class="card">
+                        <img src="img/laptop/product-3.png" class="card-img-top" alt="Xiaomi">
+                        <div class="card-body">
+                            <h3 class="card-title">Xiaomi Mi NootBook Pro</h3>
+                            <p class="card-text text-muted">Definition: Laptop Computer. A laptop computer is a portable personal computer powered by a battery, or an AC cord
+                            plugged into an electrical outlet, which is also used to charge the battery.</p>
+                            <h2 class="pricing pb-2">$999</h2>
+                            <button type="button" class="btn btn-dark">BUY NOW <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="about" class="mb-5 pb-5">
+        <div class="container">
+            <div  class="text-center py-5 my-2">
+                <h3 class="bottem-border ">Catagories</h3>
+            </div>
+            <!-- Catagory Included -->
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                    <div>
+                        <div class="card card-1 text-center py-3">
+                            <div class="card-body">
+                                <img src="img/Categories/bag.png" class="py-3 px-4" alt="bag">
+                                <h3>Bag</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card text-center py-3">
+                        <div class="card-body">
+                            <img src="img/Categories/perfume.png" class="py-3" alt="beauty">
+                            <h3>Beauty</h3>
+                        </div>
+                    </div>
+                    <div class="card text-center py-3 mt-5">
+                        <div class="card-body">
+                            <img src="img/Categories/shoe.png" class="py-3" alt="shoe">
+                            <h3>Shoe</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <img src="img/Categories/pale-order.png" class="w-100" alt="pale-order">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="contact" class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Heading Text -->
+                    <div class="text-center py-4">
+                        <h2>Contact Us</h2>
+                    </div>
+                    
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option>Chittagong</option>
+                                    <option selected>Dhaka</option>
+                                    <option>Khulna</option>
+                                    <option>Barishal</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p class="text-muted mb-0">R-COMMARCE 2020 &copy; All Rigth Reserve By Kashfi Hasan Rizvi</p>
+    </footer>
+
+
+
 <!-- Bootstrap Js -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script src="js/navbar-fixed.js"></script>
 </body>
 </html>

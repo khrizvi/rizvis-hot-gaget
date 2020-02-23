@@ -70,19 +70,3 @@ body{
 footer p{
     font-size: 13px;
 }
-
-/*Media Query*/
-
-@media screen and (max-width: 991px){
-    #about .card-1{
-        width: 100%;
-        margin-bottom: 20px;
-        display: none;
-    }
-
-}
-@media screen and (max-width: 991px){
-    .water-mark{
-        font-size: 20px;
-    }
-}

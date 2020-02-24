@@ -66,7 +66,62 @@ body{
     bottom: -12px;
 }
 
+.cat-img1 img {
+    width: 225px;
+    padding: 45px;
+     box-shadow: 5px 5px 10px #aaa;
+    max-width: 100%;
+}
+
+.cat-img2 {
+    width: 225px;
+    padding: 45px;
+     box-shadow: 5px 5px 10px #aaa;
+    max-width: 100%;
+}
+
+.cat-img3 {
+    width: 225px;
+    padding: 45px;
+     box-shadow: 5px 5px 10px #aaa;
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+
 /*Footer*/
 footer p{
     font-size: 13px;
+}
+
+/*Media Query*/
+
+
+@media screen and (max-width: 991px) {
+    .water-mark {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+   .water-mark {
+       display: none;
+   }
+    .double-image img{
+        max-width: 100%;
+        display: block;
+        margin-top: 20px;
+    }
+    .total-image{
+        margin-left:120px;
+    }
+}
+@media screen and (max-width: 480px){
+    .total-image {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .total-image {
+        margin-left: 40px;
+    }
 }
